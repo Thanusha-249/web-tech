@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        .bg-container{
+            background-color: black;
+            text-align:center;
+            width:50%;
+            height:100%;
+        }
+
+        textarea{
+            width:200px ;
+            height:100px;
+        }
+        
+        .submitbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+        }
+ 
+    </style>
+</head>
+<body>
+    <form action="/action_page.php"> 
+      <div class="bg-container">
+         <h1 style="color: aliceblue; font-family: 'Times New Roman', Times, serif;" >Feedback</h1>
+         <p style="color: antiquewhite; font-family: 'Times New Roman', Times, serif;"> Tell us what you think..</p>
+
+         <label for="name" style="color: aliceblue;"><b>Name:</b></label>
+         <input type="text" placeholder="Enter Name" name="name" id="name" required><br><br>
+
+         <label for="email" style="color: aliceblue;"><b>Email:</b></label>
+         <input type="text" placeholder="Enter Email" name="email" id="email" required><br><br>
+
+       
+         <textarea required name="feedback" placeholder="Tell us what you think"></textarea><br><br>
+        <div class="feedback-rate-box">
+         <input type="radio" name="feedback-star" id="feedback-star1"/>
+         <label class="feedback-star" for="feedback-star1"></label>
+         <input type="radio" name="feedback-star" id="feedback-star2"/>
+         <label class="feedback-star" for="feedback-star2"></label>
+         <input type="radio" name="feedback-star" id="feedback-star3"/>
+         <label class="feedback-star" for="feedback-star3"></label>
+         <input type="radio" name="feedback-star" id="feedback-star4"/>
+         <label class="feedback-star" for="feedback-star4"></label>
+         <input type="radio" name="feedback-star" id="feedback-star5"/>
+         <label class="feedback-star" for="feedback-star5"></label><br>
+        </div>
+         <button type="submit" class="submitbtn">Submit</button>
+    </div>
+</body>
+</html>
